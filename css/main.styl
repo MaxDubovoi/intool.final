@@ -1,0 +1,471 @@
+@import 'nib'
+
+/* VARIABLES */
+tdur        = 300ms ease
+transition  = all tdur
+radius      = 6px
+spriteLink  = '../images/sprite.png'
+
+/* FUNCTIONS */
+font-dinpro()
+  font-family "DINPro", "Times New Roman", "Arial" , sans-serif
+font-myriad()
+  font-family: "PT Sans", sans-serif;
+clearfix()
+  zoom 1
+  &:before,
+  &:after
+    content ""
+    display table
+  &:after
+    clear both
+
+font-proxima()
+  font-family 'proxima_nova', sans-serif
+
+bs-cover( type = cover)
+  background-size type
+  .no-backgroundsize &
+    -ms-behavior url(backgroundsize.min.htc)
+
+overflow-ellipsis(blockWidth)
+  text-overflow ellipsis
+  white-space nowrap
+  overflow hidden
+  max-width blockWidth
+
+multiline-overflow(lines-to-show)
+  display block
+  display -webkit-box
+  max-height @line-height*lines-to-show
+  -webkit-line-clamp lines-to-show
+  -webkit-box-orient vertical
+  overflow hidden
+  text-overflow ellipsis
+
+icon()
+  background-image none !important
+  position relative
+  &:before
+  &:after
+    content ' '
+    absolute left top
+    width 100%
+    height 100%
+    opacity 1
+    transition transition
+    .no-opacity &
+      display block
+  &:after
+    background-position 0 bottom
+    opacity 0
+    .no-opacity &
+      display none
+  &:hover
+    &:before
+      opacity 0
+      .no-opacity &
+        display none
+    &:after
+      opacity 1
+      .no-opacity &
+        display block
+
+html
+  height 100%
+.wrapper
+  position relative
+body
+  clearfix()
+  padding 75px 0
+  font-myriad()
+  position relative
+
+  font-weight normal
+  margin 0
+  -webkit-font-smoothing subpixel-antialiased !important
+  backface-visibility hidden
+  background-color: #b3b3b3
+h1,h2,h3,h4,ul,li
+  margin 0
+  padding 0
+  list-style none
+
+a
+  text-decoration none
+  &:visited
+    color #000
+  &:focus
+    outline none
+
+p
+  margin 0
+
+/* =============================================================================
+Global elements
+========================================================================== */
+.none
+  display none !important
+.dtable
+  display table
+.dtcell
+  display table-cell
+  vertical-align middle
+.invisible
+  visibility hidden
+  opacity 0 !important
+.hidden
+  visibility hidden !important
+.visible
+  visibility visible !important
+  opacity 1 !important
+.clear
+  clear both
+  height 0
+  font-size 0
+  line-height 0
+  overflow hidden
+  display block
+.clearfix
+  zoom 1
+  &:before,
+  &:after
+    content ""
+    display table
+  &:after
+    clear both
+.min-width
+  background-color #ffffff
+  position relative
+  margin 0 auto
+  width 900px
+  box-sizing border-box
+  padding 15px
+/* ===========================================================================
+ICONS
+========================================================================== */
+.message-icon
+  background-image url(spriteLink)
+  display inline-block
+  vertical-align middle
+  height 19px
+  width 19px
+  background-position -240px 0
+  margin 0 0 0 0
+.address-tel
+  display inline-block
+  float left
+  background-image url(spriteLink)
+  background-position -240px -20px
+  height 40px
+  width 20px
+  margin 0 17px 0 17px
+
+.icon
+  background url(spriteLink) no-repeat
+  display inline-block
+  &.mitsubishi
+    icon()
+    width 80px
+    height 20px
+    &:before
+    &:after
+      background url(spriteLink) no-repeat
+      background-position -80px -70px
+    &:after
+      background-position -80px -90px
+  &.singular
+    icon()
+    width 80px
+    height 30px
+    &:before
+    &:after
+      background url(spriteLink) no-repeat
+      background-position -0px -40px
+    &:after
+      background-position -0px -69px
+  &.winstar
+    icon()
+    width 80px
+    height 30px
+    &:before
+    &:after
+      background url(spriteLink) no-repeat
+      background-position -160px -40px
+    &:after
+      background-position -160px -70px
+  &.creamtec
+    icon()
+    width 80px
+    height 20px
+    &:before
+    &:after
+      background url(spriteLink) no-repeat
+      background-position -160px 0px
+    &:after
+      background-position -160px -20px
+  &.yopm
+    icon()
+    width 80px
+    height 30px
+    &:before
+    &:after
+      background url(spriteLink) no-repeat
+      background-position -80px 0px
+    &:after
+      background-position -80px -30px
+  &.eroglu
+    icon()
+    width 80px
+    height 20px
+    &:before
+    &:after
+      background url(spriteLink) no-repeat
+      background-position 0 0
+    &:after
+      background-position 0 -20px
+
+
+/* =============================================================================
+PAGE
+========================================================================== */
+.header
+  height 53px
+  width 100%
+  background-color #454657
+  margin 0 0 14px 0
+  clearfix()
+  h3
+    display inline-block
+    float left
+    color #ffffff
+    font-size 14px
+    font-myriad()
+    font-weight 600
+    word-spacing 9px
+    margin 22px 0 0 84px
+
+.logo
+  width 119px
+  height 35px
+  float left
+  margin 8px 0 0 11px
+.lang-panel
+  height 53px
+  position relative
+  float right
+  margin 0 12px 0 0
+  &:before
+    content ""
+    height 100%
+    vertical-align middle
+    display inline-block
+
+
+.site-lang-list
+  display inline-block
+  vertical-align middle
+  &:first-child
+    margin 0
+.lang-item
+  margin 0 0 0 5px
+  float left
+  font-size 7px
+  font-dinpro()
+  font-weight 500px
+  color #ffffff
+  a
+    color #ffffff
+    text-decoration: underline
+  span
+    color #ffffff
+.navigation-site-holder
+  text-align center
+  font-size 0
+.navigation-site
+  font-dinpro()
+  display inline-block
+  margin 16px 0 0 0
+  clearfix()
+  li
+    float left
+    margin 0 0 0 3px
+    &:first-child
+      margin-left 0
+  &.top
+    span
+      background #CC0F1F
+      color #FFFFFF
+      display inline-block
+      width 115px
+      height 21px
+      text-align center
+      font-size 12px
+
+      text-transform uppercase
+      cursor pointer
+      line-height 21px
+      background linear-gradient(to bottom, #ff0000 0%, #ff0000 7%, #ff8a9b 18%, #ff0305 36%, #cc0f1f 75%, #cc0f1f 100%)
+      filter unquote("progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#cc0f1f', GradientType=0 );")/* IE6-9 */
+      transition 0.3s
+      border-top-right-radius 3px
+      border-top-left-radius 3px
+      &:hover
+        background #CC0F1F
+        background linear-gradient(to bottom, #ff0000 0%, #ff0000 7%, #ff8a9b 18%, #ff0305 36%, #cc0f1f 75%, #cc0f1f 100%)
+        filter unquote("progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#cc0f1f', GradientType=0 );")
+        transition 0.3s
+        border-top-right-radius 3px
+        border-top-left-radius 3px
+
+    a
+      color #FFFFFF
+      display inline-block
+      width 115px
+      height 21px
+      text-align center
+      font-size 12px
+      text-transform uppercase
+      line-height 21px
+      //*****************************
+      background #2c2c2c
+      background linear-gradient(to bottom, #000000 0%, #595959 16%, #4a4c4e 19%, #37373a 24%, #2c2c2c 30%, #000000 51%, #000000 60%, #000000 76%, #000000 91%, #000000 100%)/* W3C */
+      filter unquote("progid:DXImageTransform.Microsoft.gradient( startColorstr='#595959', endColorstr='#000000', GradientType=0 );")/* IE6-9 */
+      transition 0.3s
+
+      border-top-right-radius 3px
+      border-top-left-radius 3px
+
+      &:hover
+        background: #3e3e3f
+        transition 0.3s
+        background linear-gradient(to bottom, #3e3e3f 0%, #4a4c4e 10%, #727477 16%, #3e3e3f 28%, #3e3e3f 37%, #3e3e3f 51%, #3e3e3f 60%, #3e3e3f 69%, #3e3e3f 91%, #3e3e3f 100%)
+        filter unquote("progid:DXImageTransform.Microsoft.gradient( startColorstr='#727477', endColorstr='#3e3e3f', GradientType=0 );")/* IE6-9 */
+        border-top-right-radius 3px
+        border-top-left-radius 3px
+  &.bottom
+    margin 0 0 16px 0
+    span
+      background #dca05a
+      color #000
+      display inline-block
+      width 115px
+      height 21px
+      text-align center
+      font-size 12px
+
+      text-transform uppercase
+      cursor pointer
+      line-height 21px
+      transition 0.3s
+      border-bottom-right-radius 3px
+      border-bottom-left-radius 3px
+      &:hover
+        background #dca05a
+        transition 0.3s
+        border-bottom-right-radius 3px
+        border-bottom-left-radius 3px
+
+  a
+    color #000
+    display inline-block
+    width 115px
+    height 21px
+    text-align center
+    font-size 12px
+    text-transform uppercase
+    line-height 21px
+    //*****************************
+    background #b3b3b3
+    transition 0.3s
+
+    border-bottom-right-radius 3px
+    border-bottom-left-radius 3px
+
+    &:hover
+      background: #808080
+      transition 0.3s
+      border-bottom-right-radius 3px
+      border-bottom-left-radius 3px
+
+/* =============================================================================
+LEFT SIDE
+========================================================================== */
+.left-side
+  postion relative
+  width 142px
+  min-height 670px
+  float left
+  background-color #cccccc
+.navigation-page
+  font-dinpro()
+  font-weight 500
+  font-size 11px
+  color #4d4d4d
+  text-transform uppercase
+  margin 23px 0 0 33px
+  clearfix()
+  a
+    line-height 22px
+    color #4d4d4d
+  span
+    line-height 22px
+    color #000
+
+/* =============================================================================
+CENTRAL
+========================================================================== */
+.content
+  postion relative
+  width 586px
+  min-height 670px
+  float left
+  background-color #e4e4e4
+  font-myriad()
+  font-weight 400
+  font-size 11px
+  box-sizing border-box
+  padding 19px 43px 0 52px
+
+
+/* =============================================================================
+RIGHT SIDE
+========================================================================== */
+.right-side
+  postion relative
+  width 138px
+  min-height 670px
+  float left
+  background-color #cccccc
+.partners
+  margin 24px 0 0 0
+  text-align center
+  li
+    display inline-block
+    margin 12px 0 0 0
+    &:first-child
+      margin 0
+/* =============================================================================
+FOOTER
+========================================================================== */
+.footer
+  font-myriad()
+  font-size 8px
+  color #fff
+  height 49px
+  width 100%
+  background-color #454657
+  margin 0 0 14px 0
+  clearfix()
+  p
+    float left
+    margin 12px 0 0 0
+    line-height 9px
+  h3
+    display block
+    float left
+    color #ffffff
+    font-size 14px
+    font-myriad()
+    font-weight 400
+    margin 17px 0 0 150px
