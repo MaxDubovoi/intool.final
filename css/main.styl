@@ -4,7 +4,8 @@
 tdur        = 300ms ease
 transition  = all tdur
 radius      = 6px
-spriteLink  = '../images/sprite.png'
+mainSpriteLink = '../images/sprite.png'
+contentIcons = '../images/content-icons-sprite.png'
 
 /* FUNCTIONS */
 font-dinpro()
@@ -146,7 +147,7 @@ ICONS
 ========================================================================== */
 .message-icon
   cursor pointer
-  background-image url(spriteLink)
+  background-image url(mainSpriteLink)
   display inline-block
   vertical-align middle
   height 19px
@@ -156,14 +157,14 @@ ICONS
 .address-tel
   display inline-block
   float left
-  background-image url(spriteLink)
+  background-image url(mainSpriteLink)
   background-position -240px -20px
   height 40px
   width 20px
   margin 0 17px 0 17px
 
 .icon
-  background url(spriteLink) no-repeat
+  background url(mainSpriteLink) no-repeat
   display inline-block
   &.mitsubishi
     icon()
@@ -171,7 +172,7 @@ ICONS
     height 20px
     &:before
     &:after
-      background url(spriteLink) no-repeat
+      background url(mainSpriteLink) no-repeat
       background-position -80px -70px
     &:after
       background-position -80px -90px
@@ -181,7 +182,7 @@ ICONS
     height 30px
     &:before
     &:after
-      background url(spriteLink) no-repeat
+      background url(mainSpriteLink) no-repeat
       background-position -0px -40px
     &:after
       background-position -0px -69px
@@ -191,7 +192,7 @@ ICONS
     height 30px
     &:before
     &:after
-      background url(spriteLink) no-repeat
+      background url(mainSpriteLink) no-repeat
       background-position -160px -40px
     &:after
       background-position -160px -70px
@@ -201,7 +202,7 @@ ICONS
     height 20px
     &:before
     &:after
-      background url(spriteLink) no-repeat
+      background url(mainSpriteLink) no-repeat
       background-position -160px 0px
     &:after
       background-position -160px -20px
@@ -211,7 +212,7 @@ ICONS
     height 30px
     &:before
     &:after
-      background url(spriteLink) no-repeat
+      background url(mainSpriteLink) no-repeat
       background-position -80px 0px
     &:after
       background-position -80px -30px
@@ -221,12 +222,48 @@ ICONS
     height 20px
     &:before
     &:after
-      background url(spriteLink) no-repeat
+      background url(mainSpriteLink) no-repeat
       background-position 0 0
     &:after
       background-position 0 -20px
 
+.content-icon
+  width 60px
+  height 60px
+  icon()
+  &.aims
+    position absolute
+    display block
+    top 15px
+    
 
+    &:before
+    &:after
+      background url(contentIcons) no-repeat
+      background-position 0 0
+&.values
+  display block
+  position absolute
+  bottom 18px
+  &:before
+  &:after
+    background url(contentIcons) no-repeat
+    background-position -60px 0
+&.command
+  display block
+  float left
+  margin 18px 7px 38px 0
+  &:before
+  &:after
+    background url(contentIcons) no-repeat
+    background-position -120px 0
+.icon-container
+  position relative
+  clearfix()
+  float left
+  height 303px
+  width 60px
+  margin 0 7px 0 0
 /* =============================================================================
 PAGE
 ========================================================================== */
@@ -426,26 +463,42 @@ LEFT SIDE
     color #000
 
 /* =============================================================================
-CENTRAL
+CENTRAL CONTENT
 ========================================================================== */
-.content
-  width 586px
-  min-height 670px
-  float left
-  background-color #e4e4e4
-  font-myriad()
-  font-weight 400
-  font-size 11px
-  box-sizing border-box
-  padding 19px 43px 0 52px
 .central
   clearfix()
   min-height 670px
   background-color #cccccc
-
-
-
-
+.content
+  clearfix()
+  width 586px
+  min-height 670px
+  float left
+  background-color #e4e4e4
+  box-sizing border-box
+  padding 0 43px 22px 52px
+  font-myriad()
+  p
+    font-weight 400
+    font-size 12px
+  h4
+    margin 20px 0 20px 0
+    font-size 14px
+    font-weight 600
+  h5
+    margin 20px 0 0 0
+    font-size 13px
+    font-weight 600
+.history-image
+  width 491px
+  height 20px
+  margin 35px auto 35px auto
+.aim-list
+  margin 15px 0 0 0
+  li
+    font-weight 400
+    font-size 12px
+    list-style disc inside
 /* =============================================================================
 RIGHT SIDE
 ========================================================================== */
