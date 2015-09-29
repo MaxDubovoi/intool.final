@@ -75,8 +75,8 @@ switch ($_SESSION['page']){
     <!--[if lt IE 9]>
     <script src="js/libs/ie-html5tags.js" type="text/javascript"></script>
     <![endif]-->
-    <link rel="icon" href="" type="image/x-icon" />
-    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.png" type="image/x-icon" />
     <link href='https://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="css/normalize.css" type="text/css" />
