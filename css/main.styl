@@ -231,9 +231,9 @@ ICONS
   width 60px
   height 60px
   icon()
+  display block
   &.aims
     position absolute
-    display block
     top 15px
     
 
@@ -241,22 +241,49 @@ ICONS
     &:after
       background url(contentIcons) no-repeat
       background-position 0 0
-&.values
-  display block
-  position absolute
-  bottom 18px
-  &:before
-  &:after
-    background url(contentIcons) no-repeat
-    background-position -60px 0
-&.command
-  display block
-  float left
-  margin 18px 7px 38px 0
-  &:before
-  &:after
-    background url(contentIcons) no-repeat
-    background-position -120px 0
+  &.values
+    position absolute
+    bottom 18px
+    &:before
+    &:after
+      background url(contentIcons) no-repeat
+      background-position -60px 0
+  &.command
+
+    float left
+    margin 18px 7px 38px 0
+    &:before
+    &:after
+      background url(contentIcons) no-repeat
+      background-position -120px 0
+  &.cup
+    float left
+    margin 11px 7px 161px 0
+    &:before
+    &:after
+      background url(contentIcons) no-repeat
+      background-position -180px -60px
+  &.rocket
+    float left
+    margin 11px 7px 0 0
+    &:before
+    &:after
+      background url(contentIcons) no-repeat
+      background-position -120px -60px
+  &.hands
+    float left
+    margin 11px 7px 133px 0
+    &:before
+    &:after
+      background url(contentIcons) no-repeat
+      background-position -60px -60px
+  &.pen
+    float left
+    margin 11px 7px 0 0
+    &:before
+    &:after
+      background url(contentIcons) no-repeat
+      background-position 0 -60px
 .icon-container
   position relative
   clearfix()
@@ -483,18 +510,21 @@ CENTRAL CONTENT
     font-size 12px
   h4
     margin 20px 0 20px 0
-    font-size 14px
+    font-size 12px
     font-weight 600
+    text-transform uppercase
   h5
     margin 20px 0 0 0
-    font-size 13px
+    font-size 12px
     font-weight 600
+.red-text
+  color #e4000b
+  font-weight 600
 .history-image
   width 491px
   height 20px
   margin 35px auto 35px auto
-.aim-list
-  margin 15px 0 0 0
+.list
   li
     font-weight 400
     font-size 12px

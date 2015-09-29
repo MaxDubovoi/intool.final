@@ -474,6 +474,7 @@ ICONS
   height: 60px;
   background-image: none !important;
   position: relative;
+  display: block;
 }
 .content-icon:before,
 .content-icon:after {
@@ -519,7 +520,6 @@ ICONS
 }
 .content-icon.aims {
   position: absolute;
-  display: block;
   top: 15px;
 }
 .content-icon.aims:before,
@@ -527,25 +527,59 @@ ICONS
   background: url("../images/content-icons-sprite.png") no-repeat;
   background-position: 0 0;
 }
-.values {
-  display: block;
+.content-icon.values {
   position: absolute;
   bottom: 18px;
 }
-.values:before,
-.values:after {
+.content-icon.values:before,
+.content-icon.values:after {
   background: url("../images/content-icons-sprite.png") no-repeat;
   background-position: -60px 0;
 }
-.command {
-  display: block;
+.content-icon.command {
   float: left;
   margin: 18px 7px 38px 0;
 }
-.command:before,
-.command:after {
+.content-icon.command:before,
+.content-icon.command:after {
   background: url("../images/content-icons-sprite.png") no-repeat;
   background-position: -120px 0;
+}
+.content-icon.cup {
+  float: left;
+  margin: 11px 7px 161px 0;
+}
+.content-icon.cup:before,
+.content-icon.cup:after {
+  background: url("../images/content-icons-sprite.png") no-repeat;
+  background-position: -180px -60px;
+}
+.content-icon.rocket {
+  float: left;
+  margin: 11px 7px 0 0;
+}
+.content-icon.rocket:before,
+.content-icon.rocket:after {
+  background: url("../images/content-icons-sprite.png") no-repeat;
+  background-position: -120px -60px;
+}
+.content-icon.hands {
+  float: left;
+  margin: 11px 7px 133px 0;
+}
+.content-icon.hands:before,
+.content-icon.hands:after {
+  background: url("../images/content-icons-sprite.png") no-repeat;
+  background-position: -60px -60px;
+}
+.content-icon.pen {
+  float: left;
+  margin: 11px 7px 0 0;
+}
+.content-icon.pen:before,
+.content-icon.pen:after {
+  background: url("../images/content-icons-sprite.png") no-repeat;
+  background-position: 0 -60px;
 }
 .icon-container {
   position: relative;
@@ -854,12 +888,17 @@ CENTRAL CONTENT
 }
 .content h4 {
   margin: 20px 0 20px 0;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
+  text-transform: uppercase;
 }
 .content h5 {
   margin: 20px 0 0 0;
-  font-size: 13px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.red-text {
+  color: #e4000b;
   font-weight: 600;
 }
 .history-image {
@@ -867,10 +906,7 @@ CENTRAL CONTENT
   height: 20px;
   margin: 35px auto 35px auto;
 }
-.aim-list {
-  margin: 15px 0 0 0;
-}
-.aim-list li {
+.list li {
   font-weight: 400;
   font-size: 12px;
   list-style: disc inside;

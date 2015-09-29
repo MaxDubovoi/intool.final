@@ -3,12 +3,13 @@
 session_start();
 if(!isset($_GET['page']))
 {
-    $_SESSION['page']='history';
+    $_SESSION['page']='aboutCompany';
 }
 else{
     $_SESSION['page']=addslashes(strip_tags(trim($_GET['page'])));
 }
 switch ($_SESSION['page']){
+    case 'aboutCompany':
     case 'history':
     case 'aim':
     case 'vacancy':
