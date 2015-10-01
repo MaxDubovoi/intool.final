@@ -11,7 +11,7 @@ contentIcons = '../images/content-icons-sprite.png'
 font-dinpro()
   font-family "DINPro", "Times New Roman", "Arial" , sans-serif
 font-myriad()
-  font-family: "PT Sans", sans-serif;
+  font-family "PT Sans", sans-serif;
 clearfix()
   zoom 1
   &:before,
@@ -54,21 +54,25 @@ icon()
     width 100%
     height 100%
     opacity 1
+    visibility visible
     transition transition
     .no-opacity &
       display block
   &:after
     background-position 0 bottom
     opacity 0
+    visibility hidden
     .no-opacity &
       display none
   &:hover
     &:before
       opacity 0
+      visibility hidden
       .no-opacity &
         display none
     &:after
       opacity 1
+      visibility visible
       .no-opacity &
         display block
 
@@ -304,7 +308,7 @@ PAGE
     display inline-block
     float left
     color #ffffff
-    font-size 14px
+    font-size 15px
     font-myriad()
     font-weight 600
     word-spacing 9px
@@ -336,7 +340,7 @@ PAGE
   cursor pointer
   margin 0 0 0 5px
   float left
-  font-size 7px
+  font-size 10px
   font-dinpro()
   font-weight 500px
   color #ffffff

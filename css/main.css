@@ -150,6 +150,7 @@ ICONS
   opacity: 1;
   -ms-filter: none;
   filter: none;
+  visibility: visible;
   transition: all 300ms ease;
 }
 .no-opacity .icon.mitsubishi:before,
@@ -161,6 +162,7 @@ ICONS
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
+  visibility: hidden;
 }
 .no-opacity .icon.mitsubishi:after {
   display: none;
@@ -169,6 +171,7 @@ ICONS
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
+  visibility: hidden;
 }
 .no-opacity .icon.mitsubishi:hover:before {
   display: none;
@@ -177,6 +180,7 @@ ICONS
   opacity: 1;
   -ms-filter: none;
   filter: none;
+  visibility: visible;
 }
 .no-opacity .icon.mitsubishi:hover:after {
   display: block;
@@ -206,6 +210,7 @@ ICONS
   opacity: 1;
   -ms-filter: none;
   filter: none;
+  visibility: visible;
   transition: all 300ms ease;
 }
 .no-opacity .icon.singular:before,
@@ -217,6 +222,7 @@ ICONS
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
+  visibility: hidden;
 }
 .no-opacity .icon.singular:after {
   display: none;
@@ -225,6 +231,7 @@ ICONS
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
+  visibility: hidden;
 }
 .no-opacity .icon.singular:hover:before {
   display: none;
@@ -233,6 +240,7 @@ ICONS
   opacity: 1;
   -ms-filter: none;
   filter: none;
+  visibility: visible;
 }
 .no-opacity .icon.singular:hover:after {
   display: block;
@@ -262,6 +270,7 @@ ICONS
   opacity: 1;
   -ms-filter: none;
   filter: none;
+  visibility: visible;
   transition: all 300ms ease;
 }
 .no-opacity .icon.winstar:before,
@@ -273,6 +282,7 @@ ICONS
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
+  visibility: hidden;
 }
 .no-opacity .icon.winstar:after {
   display: none;
@@ -281,6 +291,7 @@ ICONS
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
+  visibility: hidden;
 }
 .no-opacity .icon.winstar:hover:before {
   display: none;
@@ -289,6 +300,7 @@ ICONS
   opacity: 1;
   -ms-filter: none;
   filter: none;
+  visibility: visible;
 }
 .no-opacity .icon.winstar:hover:after {
   display: block;
@@ -318,6 +330,7 @@ ICONS
   opacity: 1;
   -ms-filter: none;
   filter: none;
+  visibility: visible;
   transition: all 300ms ease;
 }
 .no-opacity .icon.creamtec:before,
@@ -329,6 +342,7 @@ ICONS
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
+  visibility: hidden;
 }
 .no-opacity .icon.creamtec:after {
   display: none;
@@ -337,6 +351,7 @@ ICONS
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
+  visibility: hidden;
 }
 .no-opacity .icon.creamtec:hover:before {
   display: none;
@@ -345,6 +360,7 @@ ICONS
   opacity: 1;
   -ms-filter: none;
   filter: none;
+  visibility: visible;
 }
 .no-opacity .icon.creamtec:hover:after {
   display: block;
@@ -374,6 +390,7 @@ ICONS
   opacity: 1;
   -ms-filter: none;
   filter: none;
+  visibility: visible;
   transition: all 300ms ease;
 }
 .no-opacity .icon.yopm:before,
@@ -385,6 +402,7 @@ ICONS
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
+  visibility: hidden;
 }
 .no-opacity .icon.yopm:after {
   display: none;
@@ -393,6 +411,7 @@ ICONS
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
+  visibility: hidden;
 }
 .no-opacity .icon.yopm:hover:before {
   display: none;
@@ -401,6 +420,7 @@ ICONS
   opacity: 1;
   -ms-filter: none;
   filter: none;
+  visibility: visible;
 }
 .no-opacity .icon.yopm:hover:after {
   display: block;
@@ -430,6 +450,7 @@ ICONS
   opacity: 1;
   -ms-filter: none;
   filter: none;
+  visibility: visible;
   transition: all 300ms ease;
 }
 .no-opacity .icon.eroglu:before,
@@ -441,6 +462,7 @@ ICONS
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
+  visibility: hidden;
 }
 .no-opacity .icon.eroglu:after {
   display: none;
@@ -449,6 +471,7 @@ ICONS
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
+  visibility: hidden;
 }
 .no-opacity .icon.eroglu:hover:before {
   display: none;
@@ -457,6 +480,7 @@ ICONS
   opacity: 1;
   -ms-filter: none;
   filter: none;
+  visibility: visible;
 }
 .no-opacity .icon.eroglu:hover:after {
   display: block;
@@ -487,6 +511,7 @@ ICONS
   opacity: 1;
   -ms-filter: none;
   filter: none;
+  visibility: visible;
   transition: all 300ms ease;
 }
 .no-opacity .content-icon:before,
@@ -498,6 +523,7 @@ ICONS
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
+  visibility: hidden;
 }
 .no-opacity .content-icon:after {
   display: none;
@@ -506,6 +532,7 @@ ICONS
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
+  visibility: hidden;
 }
 .no-opacity .content-icon:hover:before {
   display: none;
@@ -514,6 +541,7 @@ ICONS
   opacity: 1;
   -ms-filter: none;
   filter: none;
+  visibility: visible;
 }
 .no-opacity .content-icon:hover:after {
   display: block;
@@ -619,7 +647,7 @@ PAGE
   display: inline-block;
   float: left;
   color: #fff;
-  font-size: 14px;
+  font-size: 15px;
   font-family: "PT Sans", sans-serif;
   font-weight: 600;
   word-spacing: 9px;
@@ -654,7 +682,7 @@ PAGE
   cursor: pointer;
   margin: 0 0 0 5px;
   float: left;
-  font-size: 7px;
+  font-size: 10px;
   font-family: "DINPro", "Times New Roman", "Arial", sans-serif;
   font-weight: 500px;
   color: #fff;

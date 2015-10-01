@@ -1,6 +1,7 @@
 @font-face {
     font-family : "DINPro";
-    src : url('../fonts/DINPro-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/DINPro-Medium.otf') format('opentype'), url('../fonts/DINPro-Medium.woff') format('woff'), url('../fonts/DINPro-Medium.ttf') format('truetype'), url('../fonts/DINPro-Medium.svg#DINPro-Medium') format('svg');
+    src: url('../fonts/DINProMedium.eot?#iefix') format('embedded-opentype');
+    src : url('../fonts/DINProMedium.woff') format('woff'), url('../fonts/DINProMedium.ttf') format('truetype'), url('../fonts/DINProMedium.svg#DINPro-Medium') format('svg'), url('../fonts/DINProMedium.woff2') format('woff2');
     font-weight : 500;
     font-style : normal;
 }
