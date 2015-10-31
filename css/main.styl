@@ -90,7 +90,7 @@ body
   margin 0
   -webkit-font-smoothing subpixel-antialiased !important
   backface-visibility hidden
-  background-color: #b3b3b3
+  background-color: #464650
 h1,h2,h3,h4,ul,li
   margin 0
   padding 0
@@ -154,17 +154,17 @@ ICONS
   background-image url(mainSpriteLink)
   display inline-block
   vertical-align middle
-  height 19px
-  width 19px
+  height 30px
+  width 30px
   background-position -240px 0
   margin 0 0 0 0
 .address-tel
   display inline-block
   float left
   background-image url(mainSpriteLink)
-  background-position -240px -20px
-  height 40px
-  width 20px
+  background-position -240px -30px
+  height 50px
+  width 30px
   margin 0 17px 0 17px
 
 .icon
@@ -299,24 +299,25 @@ ICONS
 PAGE
 ========================================================================== */
 .header
-  height 53px
+  height 70px
   width 100%
-  background-color #454657
-  margin 0 0 14px 0
+  font-size 0
+  background-color #fff
+  margin 0 0 0 0
   clearfix()
   h3
     display inline-block
     float left
-    color #ffffff
-    font-size 15px
+    color #000
+    font-size 17px
     font-myriad()
     font-weight 600
     word-spacing 9px
-    margin 22px 0 0 84px
+    margin 22px 0 0 33px
 
 .logo
-  width 119px
-  height 35px
+  width 173px
+  height 48px
   float left
   margin 8px 0 0 11px
 .lang-panel
@@ -343,124 +344,103 @@ PAGE
   font-size 10px
   font-dinpro()
   font-weight 500px
-  color #ffffff
+  color #000
   a
-    color #ffffff
+    color #000
     text-decoration: underline
   span
-    color #ffffff
+    color #000
 .navigation-site-holder
   text-align center
   font-size 0
 .navigation-site
   font-dinpro()
   display inline-block
-  margin 16px 0 0 0
   clearfix()
   li
     float left
     margin 0 0 0 3px
     &:first-child
       margin-left 0
-  &.top
-    span
-      background #CC0F1F
-      color #FFFFFF
-      display inline-block
-      width 115px
-      height 21px
-      text-align center
-      font-size 12px
+  span
+    background #dca05a
+    color #000
+    display inline-block
+    width 115px
+    height 21px
+    text-align center
+    font-size 12px
 
-      text-transform uppercase
-      cursor pointer
-      line-height 21px
-      background linear-gradient(to bottom, #ff0000 0%, #ff0000 7%, #ff8a9b 18%, #ff0305 36%, #cc0f1f 75%, #cc0f1f 100%)
-      filter unquote("progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#cc0f1f', GradientType=0 );")/* IE6-9 */
-      transition 0.3s
-      border-top-right-radius 3px
-      border-top-left-radius 3px
-      &:hover
-        background #CC0F1F
-        background linear-gradient(to bottom, #ff0000 0%, #ff0000 7%, #ff8a9b 18%, #ff0305 36%, #cc0f1f 75%, #cc0f1f 100%)
-        filter unquote("progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#cc0f1f', GradientType=0 );")
-        transition 0.3s
-        border-top-right-radius 3px
-        border-top-left-radius 3px
-
-    a
-      color #FFFFFF
-      display inline-block
-      width 115px
-      height 21px
-      text-align center
-      font-size 12px
-      text-transform uppercase
-      line-height 21px
-      //*****************************
-      background #2c2c2c
-      background linear-gradient(to bottom, #000000 0%, #595959 16%, #4a4c4e 19%, #37373a 24%, #2c2c2c 30%, #000000 51%, #000000 60%, #000000 76%, #000000 91%, #000000 100%)/* W3C */
-      filter unquote("progid:DXImageTransform.Microsoft.gradient( startColorstr='#595959', endColorstr='#000000', GradientType=0 );")/* IE6-9 */
-      transition 0.3s
-
-      border-top-right-radius 3px
-      border-top-left-radius 3px
-
-      &:hover
-        background: #3e3e3f
-        transition 0.3s
-        background linear-gradient(to bottom, #3e3e3f 0%, #4a4c4e 10%, #727477 16%, #3e3e3f 28%, #3e3e3f 37%, #3e3e3f 51%, #3e3e3f 60%, #3e3e3f 69%, #3e3e3f 91%, #3e3e3f 100%)
-        filter unquote("progid:DXImageTransform.Microsoft.gradient( startColorstr='#727477', endColorstr='#3e3e3f', GradientType=0 );")/* IE6-9 */
-        border-top-right-radius 3px
-        border-top-left-radius 3px
-  &.bottom
-    margin 0 0 16px 0
-    span
+    text-transform uppercase
+    cursor pointer
+    line-height 21px
+    transition 0.3s
+    //border-bottom-right-radius 3px
+    //border-bottom-left-radius 3px
+    &:hover
       background #dca05a
-      color #000
-      display inline-block
-      width 115px
-      height 21px
-      text-align center
-      font-size 12px
-
-      text-transform uppercase
-      cursor pointer
-      line-height 21px
       transition 0.3s
+      //border-bottom-right-radius 3px
+      //border-bottom-left-radius 3px
+
+  a
+    color #000
+    display inline-block
+    width 115px
+    height 21px
+    text-align center
+    font-size 12px
+    text-transform uppercase
+    line-height 21px
+    //*****************************
+    background #b3b3b3
+    transition 0.3s
+
+    //border-bottom-right-radius 3px
+    //border-bottom-left-radius 3px
+
+    &:hover
+      background: #808080
+      transition 0.3s
+      //border-bottom-right-radius 3px
+      //border-bottom-left-radius 3px
+  &.top
+    margin 16px 0 0 0
+    span
+      border-top-right-radius 3px
+      border-top-left-radius 3px
+      &:hover
+        border-top-right-radius 3px
+        border-top-left-radius 3px
+
+    a
+      border-top-right-radius 3px
+      border-top-left-radius 3px
+      &:hover
+        border-top-right-radius 3px
+        border-top-left-radius 3px
+
+  &.bottom
+    span
       border-bottom-right-radius 3px
       border-bottom-left-radius 3px
       &:hover
-        background #dca05a
-        transition 0.3s
         border-bottom-right-radius 3px
         border-bottom-left-radius 3px
 
     a
-      color #000
-      display inline-block
-      width 115px
-      height 21px
-      text-align center
-      font-size 12px
-      text-transform uppercase
-      line-height 21px
-      //*****************************
-      background #b3b3b3
-      transition 0.3s
-
       border-bottom-right-radius 3px
       border-bottom-left-radius 3px
-
       &:hover
-        background: #808080
-        transition 0.3s
         border-bottom-right-radius 3px
         border-bottom-left-radius 3px
+
+
 .image-holder
   width 870px
   height 237px
   overflow hidden
+  font-size 0
    img
     width 100%
     height auto
@@ -501,7 +481,7 @@ CENTRAL CONTENT
   min-height 670px
   background-color #cccccc
 .content
-  clearfix()
+  font-size 100%
   width 586px
   min-height 670px
   float left
@@ -509,6 +489,7 @@ CENTRAL CONTENT
   box-sizing border-box
   padding 0 43px 22px 52px
   font-myriad()
+  text-align justify
   p
     font-weight 400
     font-size 12px
@@ -533,6 +514,10 @@ CENTRAL CONTENT
     font-weight 400
     font-size 12px
     list-style disc inside
+.container
+  overflow hidden
+
+
 /* =============================================================================
 RIGHT SIDE
 ========================================================================== */
@@ -556,21 +541,22 @@ FOOTER
 .footer
   font-myriad()
   font-size 8px
-  color #fff
+  color #000
   height 49px
   width 100%
-  background-color #454657
+  background-color #fff
   margin 0 0 14px 0
   clearfix()
   p
     float left
     margin 12px 0 0 0
-    line-height 9px
+    line-height 14px
+    font-size 12px
   h3
     display block
     float left
-    color #ffffff
-    font-size 14px
+    color #000
+    font-size 19px
     font-myriad()
     font-weight 400
-    margin 17px 0 0 150px
+    margin 17px 0 0 64px
