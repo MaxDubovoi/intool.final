@@ -3,7 +3,7 @@ session_start();
 
 
 ?>
-    <a href=""><img class="logo" src="images/logo.png" alt=""></a>
+    <a href=""><img class="main-logo" src="images/logo.png" alt=""></a>
     <h3>ВАШ  НАДЕЖНЫЙ  ПАРТНЕР  В  ОБЛАСТИ  МЕТАЛЛООБРАБОТКИ</h3>
     <div class="lang-panel">
         <a href="mailto:maximdubovoi@gmail.com" class="message-icon"></a>

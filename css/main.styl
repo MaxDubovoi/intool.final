@@ -9,9 +9,9 @@ contentIcons = '../images/content-icons-sprite.png'
 
 /* FUNCTIONS */
 font-dinpro()
-  font-family "DINPro", "Times New Roman", "Arial" , sans-serif
+  font-family "PT Sans", "Times New Roman", "Arial" , sans-serif
 font-myriad()
-  font-family "PT Sans", sans-serif;
+  font-family "PT Sans","Times New Roman", "Arial", sans-serif
 clearfix()
   zoom 1
   &:before,
@@ -83,9 +83,7 @@ html
 body
   clearfix()
   padding 75px 0
-  font-myriad()
   position relative
-
   font-weight normal
   margin 0
   -webkit-font-smoothing subpixel-antialiased !important
@@ -109,6 +107,8 @@ p
 /* =============================================================================
 Global elements
 ========================================================================== */
+.tar
+  text-align right
 .none
   display none !important
 .dtable
@@ -235,6 +235,7 @@ ICONS
   width 60px
   height 60px
   icon()
+  transition 0
   display block
   &.aims
     position absolute
@@ -255,35 +256,35 @@ ICONS
   &.command
 
     float left
-    margin 18px 7px 38px 0
+    margin 18px 7px 0 0
     &:before
     &:after
       background url(contentIcons) no-repeat
       background-position -120px 0
   &.cup
     float left
-    margin 11px 7px 161px 0
+    margin -18px 7px 0 0
     &:before
     &:after
       background url(contentIcons) no-repeat
       background-position -180px -60px
   &.rocket
     float left
-    margin 11px 7px 0 0
+    margin -25px 7px 0 0
     &:before
     &:after
       background url(contentIcons) no-repeat
       background-position -120px -60px
   &.hands
     float left
-    margin 11px 7px 133px 0
+    margin -5px 7px 0 0
     &:before
     &:after
       background url(contentIcons) no-repeat
       background-position -60px -60px
   &.pen
     float left
-    margin 11px 7px 0 0
+    margin 5px 7px 0 0
     &:before
     &:after
       background url(contentIcons) no-repeat
@@ -294,7 +295,7 @@ ICONS
   float left
   height 303px
   width 60px
-  margin 0 7px 0 0
+  margin -10px 7px 0 0
 /* =============================================================================
 PAGE
 ========================================================================== */
@@ -315,7 +316,7 @@ PAGE
     word-spacing 9px
     margin 22px 0 0 33px
 
-.logo
+.main-logo
   width 173px
   height 48px
   float left
@@ -444,6 +445,75 @@ PAGE
    img
     width 100%
     height auto
+/* =============================================================================
+TOOL PAGE
+================================================================================ */
+.partners-blocks
+  background #cccccc
+  padding 18px 0 0 0
+  margin 0 -18px
+  li
+    width 100%
+    position relative
+    margin 0 0 18px 0
+.partners-logo
+  background #f1f1f1
+  float left
+  position relative
+  width 38%
+  height 110px
+  overflow hidden
+  img
+    display block
+    position absolute
+    top -500px
+    left -500px
+    right -500px
+    bottom -500px
+    margin auto
+
+$visibleLines = 4
+.partners-content
+  height 110px
+  padding 15px 10px 0 17px
+  background #e4e4e4
+  overflow hidden
+  box-sizing border-box
+  p
+    line-height 17px
+    multiline-overflow($visibleLines)
+    height @line-height*$visibleLines
+  a
+    font-size 10px
+    font-weight 600
+    color #000
+.partners-bottom
+  height 30px
+  background #ffffff
+  a
+    font-size 10px
+    font-weight 600
+    color #2e58a6
+    margin 0 0 0 17px
+  .catalog-button
+    display block
+    font-size 12px
+    font-weight 400
+    color #000
+    font-style italic
+    width 149px
+    height 30px
+    background #dc9f5a
+    float right
+    text-align center
+    line-height 30px
+    transition 0.3s
+    border-top-left-radius 3px
+    &:hover
+      border-top-left-radius 3px
+      transition 0.3s
+      color #604b3b
+
 
 
 /* =============================================================================
@@ -487,7 +557,7 @@ CENTRAL CONTENT
   float left
   background-color #e4e4e4
   box-sizing border-box
-  padding 0 43px 22px 52px
+  padding 0 18px 22px 18px
   font-myriad()
   text-align justify
   p
@@ -510,12 +580,14 @@ CENTRAL CONTENT
   height 20px
   margin 35px auto 35px auto
 .list
+  overflow hidden
   li
     font-weight 400
     font-size 12px
     list-style disc inside
 .container
-  overflow hidden
+    overflow hidden
+
 
 
 /* =============================================================================
