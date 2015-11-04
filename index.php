@@ -19,6 +19,7 @@ switch ($_SESSION['page']){
         $meta_kw = 'О компании';
         $_SESSION['section']='aboutCompany';
         break;
+    case 'products':
     case 'equipment':
     case 'snap-in':
     case 'tool':

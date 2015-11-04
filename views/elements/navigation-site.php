@@ -8,7 +8,7 @@
 <?php if ($_SESSION['section'] == "products"): ?>
     <li><span>Продукция</span></li>
 <?php else: ?>
-    <li><a href="/index.php?page=equipment">Продукция</a></li>
+    <li><a href="/index.php?page=products">Продукция</a></li>
 <?php endif; ?>
 
 <?php if ($_SESSION['section'] == "services"): ?>

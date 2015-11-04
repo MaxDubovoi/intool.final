@@ -886,6 +886,52 @@ TOOL PAGE
   color: #604b3b;
 }
 /* =============================================================================
+PRODUCTS PAGE
+================================================================================ */
+.products-image-list {
+  position: relative;
+  height: 497px;
+  width: 490px;
+  margin: 40px 0 0 0;
+}
+.products-text {
+  margin: 20px 0 0 0;
+}
+.products-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  width: 188px;
+}
+.products-image.tool-item {
+  top: 11px;
+  left: 14px;
+}
+.products-image.snap-in-item {
+  top: 11px;
+  left: 288px;
+}
+.products-image.production-item {
+  top: 280px;
+  left: 14px;
+}
+.products-image.equipment-item {
+  top: 280px;
+  left: 288px;
+}
+.item-label {
+  width: 117px;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  display: block;
+  border-top: 2px solid #808080;
+  border-bottom: 2px solid #808080;
+  margin: 6px auto 0 auto;
+  color: #4d4d4d;
+}
+/* =============================================================================
 LEFT SIDE
 ========================================================================== */
 .left-side {
