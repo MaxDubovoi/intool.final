@@ -892,7 +892,7 @@ PRODUCTS PAGE
   position: relative;
   height: 497px;
   width: 490px;
-  margin: 40px 0 0 0;
+  margin: 40px auto 0 auto;
 }
 .products-text {
   margin: 20px 0 0 0;
