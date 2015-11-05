@@ -805,7 +805,7 @@ TOOL PAGE
 .partners-blocks {
   background: #ccc;
   padding: 18px 0 0 0;
-  margin: 0 -18px;
+  margin: -20px -18px 0 -18px;
 }
 .partners-blocks li {
   width: 100%;
@@ -892,10 +892,10 @@ PRODUCTS PAGE
   position: relative;
   height: 497px;
   width: 490px;
-  margin: 40px auto 0 auto;
+  margin: 40px auto 20px auto;
 }
 .products-text {
-  margin: 20px 0 0 0;
+  text-indent: 20px;
 }
 .products-image {
   position: absolute;
@@ -994,7 +994,7 @@ CENTRAL CONTENT
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 0 18px 22px 18px;
+  padding: 20px 18px 22px 18px;
   font-family: "PT Sans", "Times New Roman", "Arial", sans-serif;
   text-align: justify;
 }
@@ -1003,7 +1003,7 @@ CENTRAL CONTENT
   font-size: 12px;
 }
 .content h4 {
-  margin: 20px 0 20px 0;
+  margin: 0 0 20px 0;
   font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;

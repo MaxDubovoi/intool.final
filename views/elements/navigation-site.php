@@ -11,17 +11,17 @@
     <li><a href="/index.php?page=products">Продукция</a></li>
 <?php endif; ?>
 
-<?php if ($_SESSION['section'] == "services"): ?>
+<?php /*if ($_SESSION['section'] == "services"): ?>
     <li><span class="gradient">Услуги</span></li>
 <?php else: ?>
     <li><a href="/index.php?page=engineering">Услуги</a></li>
-<?php endif; ?>
+<?php endif;/* ?>
 
-<?php if ($_SESSION['section'] == "production"): ?>
+<?php /*if ($_SESSION['section'] == "production"): ?>
     <li><span >Производство</span></li>
 <?php else: ?>
     <li><a href="/index.php?page=technology">Производство</a></li>
-<?php endif; ?>
+<?php endif; */?>
 
 <?php if ($_SESSION['section'] == "contacts"): ?>
     <li><span >Контакты</span></li>
