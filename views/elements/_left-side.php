@@ -2,12 +2,12 @@
 switch($_SESSION['section'])
 {
     case 'aboutCompany':
-        $left_menu = array('name'=>array('aboutCompany','history','aim'/*,'vacancy','partner'*/),
-                            'text'=>array('О компании','История','Миссия и цели',/*'Вакансии','Партнеры'*/) );
+        $left_menu = array('name'=>array('aboutCompany','history','aim','vacancy','partner'),
+                            'text'=>array('О компании','История','Миссия и цели','Вакансии','Партнеры') );
         break;
     case 'products':
-        $left_menu = array('name'=>array('products'/*,'equipment'*/,'tool'/*,'snap-in'*/),
-            'text'=>array('Продукция',/*'Оборудование',*/'Инструмент'/*,'Оснастка'*/) );
+        $left_menu = array('name'=>array('products','equipment','tool','snap-in'),
+            'text'=>array('Продукция','Оборудование','Инструмент','Оснастка') );
         break;
     case 'services':
         $left_menu = array('name'=>array('engineering','manufacture','maintenance'),

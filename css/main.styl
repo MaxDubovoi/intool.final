@@ -82,7 +82,7 @@ html
   position relative
 body
   clearfix()
-  padding 75px 0
+  padding 18px 0
   position relative
   font-weight normal
   margin 0
@@ -109,6 +109,7 @@ Global elements
 ========================================================================== */
 .tar
   text-align right
+  margin 0 0 12px 0
 .none
   display none !important
 .dtable
@@ -210,7 +211,7 @@ ICONS
       background-position -160px 0px
     &:after
       background-position -160px -20px
-  &.yopm
+  &.yida
     icon()
     width 80px
     height 30px
@@ -363,7 +364,7 @@ PAGE
     margin 0 0 0 3px
     &:first-child
       margin-left 0
-  span
+  .active
     background #dca05a
     color #000
     display inline-block
@@ -453,11 +454,11 @@ TOOL PAGE
   padding 18px 0 0 0
   margin -20px -18px 0 -18px
   li
+    background #f1f1f1
     width 100%
     position relative
     margin 0 0 18px 0
 .partners-logo
-  background #f1f1f1
   float left
   position relative
   width 38%
@@ -472,21 +473,37 @@ TOOL PAGE
     bottom -500px
     margin auto
 
-$visibleLines = 4
+$visibleLines = 3
 .partners-content
-  height 110px
   padding 15px 10px 0 17px
   background #e4e4e4
   overflow hidden
   box-sizing border-box
   p
+    text-indent 20px
+  .article
     line-height 17px
-    multiline-overflow($visibleLines)
-    height @line-height*$visibleLines
+    &.hide
+      multiline-overflow($visibleLines)
+      height @line-height*$visibleLines
+    &.show
+      height auto
+    ul
+      padding 0 0 0 17px
+      li
+        list-style disc
+        background #e4e4e4
+        font-size 12px
+        font-weight 400
+        margin 18px 0 0 0
+
   a
+    line-height 10px
     font-size 10px
-    font-weight 600
+    font-weight 400
     color #000
+    margin 0 0 12px 0
+
 .partners-bottom
   height 30px
   background #ffffff

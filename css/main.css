@@ -8,7 +8,7 @@ html {
 }
 body {
   zoom: 1;
-  padding: 75px 0;
+  padding: 18px 0;
   position: relative;
   font-weight: normal;
   margin: 0;
@@ -54,6 +54,7 @@ Global elements
 ========================================================================== */
 .tar {
   text-align: right;
+  margin: 0 0 12px 0;
 }
 .none {
   display: none !important;
@@ -375,14 +376,14 @@ ICONS
 .icon.creamtec:after {
   background-position: -160px -20px;
 }
-.icon.yopm {
+.icon.yida {
   background-image: none !important;
   position: relative;
   width: 80px;
   height: 30px;
 }
-.icon.yopm:before,
-.icon.yopm:after {
+.icon.yida:before,
+.icon.yida:after {
   content: ' ';
   position: absolute;
   left: 0;
@@ -395,44 +396,44 @@ ICONS
   visibility: visible;
   transition: all 300ms ease;
 }
-.no-opacity .icon.yopm:before,
-.no-opacity .icon.yopm:after {
+.no-opacity .icon.yida:before,
+.no-opacity .icon.yida:after {
   display: block;
 }
-.icon.yopm:after {
+.icon.yida:after {
   background-position: 0 bottom;
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
   visibility: hidden;
 }
-.no-opacity .icon.yopm:after {
+.no-opacity .icon.yida:after {
   display: none;
 }
-.icon.yopm:hover:before {
+.icon.yida:hover:before {
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
   visibility: hidden;
 }
-.no-opacity .icon.yopm:hover:before {
+.no-opacity .icon.yida:hover:before {
   display: none;
 }
-.icon.yopm:hover:after {
+.icon.yida:hover:after {
   opacity: 1;
   -ms-filter: none;
   filter: none;
   visibility: visible;
 }
-.no-opacity .icon.yopm:hover:after {
+.no-opacity .icon.yida:hover:after {
   display: block;
 }
-.icon.yopm:before,
-.icon.yopm:after {
+.icon.yida:before,
+.icon.yida:after {
   background: url("../images/sprite.png") no-repeat;
   background-position: -80px 0px;
 }
-.icon.yopm:after {
+.icon.yida:after {
   background-position: -80px -30px;
 }
 .icon.eroglu {
@@ -722,7 +723,7 @@ PAGE
 .navigation-site li:first-child {
   margin-left: 0;
 }
-.navigation-site span {
+.navigation-site .active {
   background: #dca05a;
   color: #000;
   display: inline-block;
@@ -735,7 +736,7 @@ PAGE
   line-height: 21px;
   transition: 0.3s;
 }
-.navigation-site span:hover {
+.navigation-site .active:hover {
   background: #dca05a;
   transition: 0.3s;
 }
@@ -808,12 +809,12 @@ TOOL PAGE
   margin: -20px -18px 0 -18px;
 }
 .partners-blocks li {
+  background: #f1f1f1;
   width: 100%;
   position: relative;
   margin: 0 0 18px 0;
 }
 .partners-logo {
-  background: #f1f1f1;
   float: left;
   position: relative;
   width: 38%;
@@ -830,7 +831,6 @@ TOOL PAGE
   margin: auto;
 }
 .partners-content {
-  height: 110px;
   padding: 15px 10px 0 17px;
   background: #e4e4e4;
   overflow: hidden;
@@ -839,21 +839,41 @@ TOOL PAGE
   box-sizing: border-box;
 }
 .partners-content p {
+  text-indent: 20px;
+}
+.partners-content .article {
   line-height: 17px;
+}
+.partners-content .article.hide {
   display: block;
   display: -webkit-box;
-  max-height: 68px;
-  -webkit-line-clamp: 4;
+  max-height: 51px;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
-  height: 68px;
+  height: 51px;
+}
+.partners-content .article.show {
+  height: auto;
+}
+.partners-content .article ul {
+  padding: 0 0 0 17px;
+}
+.partners-content .article ul li {
+  list-style: disc;
+  background: #e4e4e4;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 18px 0 0 0;
 }
 .partners-content a {
+  line-height: 10px;
   font-size: 10px;
-  font-weight: 600;
+  font-weight: 400;
   color: #000;
+  margin: 0 0 12px 0;
 }
 .partners-bottom {
   height: 30px;

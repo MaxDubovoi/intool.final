@@ -3,7 +3,7 @@
 session_start();
 if(!isset($_GET['page']))
 {
-    $_SESSION['page']='aboutCompany';
+    $_SESSION['page']='products';
 }
 else{
     $_SESSION['page']=addslashes(strip_tags(trim($_GET['page'])));
@@ -76,15 +76,18 @@ switch ($_SESSION['page']){
     <!--[if lt IE 9]>
     <script src="js/libs/ie-html5tags.js" type="text/javascript"></script>
     <![endif]-->
+    <script src = "js/libs/jquery-1.9.1.js" type = "text/javascript"></script>
+    <script src = "js/script.js" type = "text/javascript"></script>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="/favicon.png" type="image/x-icon" />
     <link href='https://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="css/normalize.css" type="text/css" />
-    <link rel="stylesheet" href="css/fonts.css" type="text/css" />
+    <!--<link rel="stylesheet" href="css/fonts.css" type="text/css" />-->
     <link rel="stylesheet" href="css/main.css" type="text/css" media="screen, projection"/>
 
     <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+
 </head>
 
 <body>

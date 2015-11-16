@@ -1,5 +1,5 @@
 var duration = 300;
-var body = $('html, body');
+
 
 var BrowserDetect = {
     init: function () {
@@ -71,7 +71,44 @@ var initFixedMenu=function(){
     });
 
 };
-$(window).load(function() {
-  initFixedMenu();
+
+$(document).ready(function(){
+    var body = $('html, body');
+    $('.partners-blocks li').each(function(){
+        var li = $(this);
+        var article = li.find('.article');
+        var link = li.find('.link-show-more');
+        li.find('.link-show-more').click(function(e){
+            e.preventDefault();
+            facechange(article,link);
+        })
+    });
+
+    function facechange (objName,link) {
+        var block = $(objName);
+        if (block.hasClass('hide')) {
+            hideBlock();
+        } else {
+           showBlock();
+        }
+
+        function hideBlock () {
+            block.removeClass('hide');
+            block.addClass('show');
+            link.text('Скрыть');
+        }
+
+        function showBlock () {
+            block.removeClass('show');
+            block.addClass('hide');
+            scrollToArticle();
+            link.text('Подробнее...');
+        }
+
+        function scrollToArticle () {
+            body.animate({scrollTop: block.offset().top}, 100);
+        }
+    }
+
 
 });
