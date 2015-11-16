@@ -474,6 +474,30 @@ TOOL PAGE
     margin auto
 
 $visibleLines = 3
+.link-show-more-products
+.link-show-more
+  line-height 10px
+  font-size 10px
+  font-weight 400
+  color #000
+  margin 0 0 12px 0
+
+.article
+  line-height 17px
+
+  &.hide
+    multiline-overflow($visibleLines)
+    height @line-height*$visibleLines
+  &.show
+    height auto
+  ul
+    padding 0 0 0 17px
+    li
+      list-style disc
+      background #e4e4e4
+      font-size 12px
+      font-weight 400
+      margin 18px 0 0 0
 .partners-content
   padding 15px 10px 0 17px
   background #e4e4e4
@@ -481,29 +505,6 @@ $visibleLines = 3
   box-sizing border-box
   p
     text-indent 20px
-  .article
-    line-height 17px
-    &.hide
-      multiline-overflow($visibleLines)
-      height @line-height*$visibleLines
-    &.show
-      height auto
-    ul
-      padding 0 0 0 17px
-      li
-        list-style disc
-        background #e4e4e4
-        font-size 12px
-        font-weight 400
-        margin 18px 0 0 0
-
-  a
-    line-height 10px
-    font-size 10px
-    font-weight 400
-    color #000
-    margin 0 0 12px 0
-
 .partners-bottom
   height 30px
   background #ffffff

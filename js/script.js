@@ -81,8 +81,15 @@ $(document).ready(function(){
         li.find('.link-show-more').click(function(e){
             e.preventDefault();
             facechange(article,link);
-        })
+        });
+
     });
+    $('.link-show-more-products').click(function(e){
+        e.preventDefault();
+        facechange($('.article'),$('.link-show-more-products'));
+    });
+
+
 
     function facechange (objName,link) {
         var block = $(objName);

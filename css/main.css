@@ -830,21 +830,18 @@ TOOL PAGE
   bottom: -500px;
   margin: auto;
 }
-.partners-content {
-  padding: 15px 10px 0 17px;
-  background: #e4e4e4;
-  overflow: hidden;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+.link-show-more-products,
+.link-show-more {
+  line-height: 10px;
+  font-size: 10px;
+  font-weight: 400;
+  color: #000;
+  margin: 0 0 12px 0;
 }
-.partners-content p {
-  text-indent: 20px;
-}
-.partners-content .article {
+.article {
   line-height: 17px;
 }
-.partners-content .article.hide {
+.article.hide {
   display: block;
   display: -webkit-box;
   max-height: 51px;
@@ -855,25 +852,29 @@ TOOL PAGE
   text-overflow: ellipsis;
   height: 51px;
 }
-.partners-content .article.show {
+.article.show {
   height: auto;
 }
-.partners-content .article ul {
+.article ul {
   padding: 0 0 0 17px;
 }
-.partners-content .article ul li {
+.article ul li {
   list-style: disc;
   background: #e4e4e4;
   font-size: 12px;
   font-weight: 400;
   margin: 18px 0 0 0;
 }
-.partners-content a {
-  line-height: 10px;
-  font-size: 10px;
-  font-weight: 400;
-  color: #000;
-  margin: 0 0 12px 0;
+.partners-content {
+  padding: 15px 10px 0 17px;
+  background: #e4e4e4;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.partners-content p {
+  text-indent: 20px;
 }
 .partners-bottom {
   height: 30px;
