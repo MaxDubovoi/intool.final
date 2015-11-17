@@ -1,4 +1,4 @@
-<?
+<?php
 switch($_SESSION['section'])
 {
     case 'aboutCompany':
@@ -6,8 +6,8 @@ switch($_SESSION['section'])
                             'text'=>array('О компании','История','Миссия и цели','Вакансии','Партнеры') );
         break;
     case 'products':
-        $left_menu = array('name'=>array('products','equipment','tool','snap-in'),
-            'text'=>array('Продукция','Оборудование','Инструмент','Оснастка') );
+        $left_menu = array('name'=>array('products','tool','snap-in','equipment'),
+            'text'=>array('Продукция','Инструмент','Оснастка','Оборудование') );
         break;
     case 'services':
         $left_menu = array('name'=>array('engineering','manufacture','maintenance'),
@@ -25,16 +25,14 @@ switch($_SESSION['section'])
 }
 ?>
 <ul class="navigation-page">
-    <?for($i=0;$i < count($left_menu['name']);$i++)
+    <?php for($i=0;$i < count($left_menu['name']);$i++)
     {
         if ($_SESSION['page'] == $left_menu['name'][$i]):
 
             echo ("<li><span>".$left_menu['text'][$i]."</span></li>");
         else:
             echo (
-                "<li><a  href='/index.php?page=".$left_menu['name'][$i]."'>
-                        ".$left_menu['text'][$i]."
-                        </a></li>");
+                "<li><a  href='/index.php?page=".$left_menu['name'][$i]."'>".$left_menu['text'][$i]."</a></li>");
         endif;
 
     }

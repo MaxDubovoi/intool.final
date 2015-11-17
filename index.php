@@ -1,5 +1,4 @@
 <?php
-
 session_start();
 if(!isset($_GET['page']))
 {
@@ -100,7 +99,7 @@ switch ($_SESSION['page']){
             ?>
         </div>
         <div class="image-holder">
-            <img class="central-photo" src="images/photo-<?echo $_SESSION['section']?>.jpg" alt="Tools photo">
+            <img class="central-photo" src="images/photo-<?php echo $_SESSION['section']?>.jpg" alt="Tools photo">
         </div>
         <div class="navigation-site-holder">
             <ul class="navigation-site top">
