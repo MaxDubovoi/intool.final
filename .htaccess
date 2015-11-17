@@ -1,14 +1,9 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine on
 
-    AddDefaultCharset utf-8
-RewriteEngine on
+  RewriteRule ^/$ / [L]
 
-RewriteBase /
-
-RewriteRule ^_media/(.*)              lib/exe/fetch.php?media=$1  [QSA,L]
-RewriteRule ^_detail/(.*)             lib/exe/detail.php?media=$1  [QSA,L]
-RewriteRule ^_export/([^/]+)/(.*)     index.php?do=export_$1&id=$2  [QSA,L]
-RewriteRule ^$                        index.php  [L]
-RewriteCond %{REQUEST_FILENAME}       !-f
-RewriteCond %{REQUEST_FILENAME}       !-d
-RewriteRule (.*)                      index.php?pages=$1  [QSA,L]
-
+  RewriteCond %{REQUEST_URI} !/$
+  RewriteCond %{REQUEST_URI} !\.(jpg|png|gif|css|js|php)$
+  RewriteRule ^(.*)$ index.php?page=$1
+</IfModule>

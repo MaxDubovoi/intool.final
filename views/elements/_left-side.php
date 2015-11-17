@@ -32,7 +32,7 @@ switch($_SESSION['section'])
             echo ("<li><span>".$left_menu['text'][$i]."</span></li>");
         else:
             echo (
-                "<li><a  href='/index.php?page=".$left_menu['name'][$i]."'>".$left_menu['text'][$i]."</a></li>");
+                "<li><a  href='/".$left_menu['name'][$i]."'>".$left_menu['text'][$i]."</a></li>");
         endif;
 
     }
