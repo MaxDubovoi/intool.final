@@ -79,8 +79,16 @@ $(document).ready(function(){
         var article = li.find('.article');
         var link = li.find('.link-show-more');
         var text = article.find('p');
+        var articleHeight;
+        article.removeClass('hide');
+        article.addClass('show');
+        articleHeight = article.height();
+        article.removeClass('show');
+        article.addClass('hide');
         var lineHeight = 17;
-        if((text.height()/lineHeight)<3){
+        console.log((articleHeight/lineHeight));
+        if((articleHeight/lineHeight)<3){
+            console.log(articleHeight/lineHeight+"enter");
             link.css({
                 visibility:'hidden'
         });
@@ -112,7 +120,7 @@ $(document).ready(function(){
            showBlock();
         }
 
-        function hideBlock () {
+        function hideBlock (){
             block.removeClass('hide');
             block.addClass('show');
             link.text('Скрыть');
