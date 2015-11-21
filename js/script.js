@@ -78,6 +78,19 @@ $(document).ready(function(){
         var li = $(this);
         var article = li.find('.article');
         var link = li.find('.link-show-more');
+        var text = article.find('p');
+        var lineHeight = 17;
+        if((text.height()/lineHeight)<3){
+            link.css({
+                visibility:'hidden'
+        });
+        }
+        else{
+            link.css({
+                visibility:'visible'
+            });
+
+        }
         li.find('.link-show-more').click(function(e){
             e.preventDefault();
             facechange(article,link);
