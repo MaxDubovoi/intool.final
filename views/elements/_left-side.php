@@ -18,7 +18,8 @@ switch($_SESSION['section'])
             'text'=>array('Технологии','Производство','Сервис') );
         break;
     case 'contacts':
-        $left_menu = null;
+        $left_menu = array('name'=>array('contacts','email_us'),
+            'text'=>array('Карта проезда','Написать нам') );
         break;
 
 
