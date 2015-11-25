@@ -1024,10 +1024,13 @@ CENTRAL CONTENT
   font-size: 12px;
 }
 .content h4 {
-  margin: 0 0 20px 0;
+  margin: 20px 0 20px 0;
   font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
+}
+.content h4:first-child {
+  margin: 0 0 20px 0;
 }
 .content h5 {
   margin: 20px 0 0 0;
