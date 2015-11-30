@@ -79,10 +79,10 @@ switch ($_SESSION['page']){
     <script src = "js/script.js" type = "text/javascript"></script>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="/favicon.png" type="image/x-icon" />
-    <link href='https://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <!--<link href='https://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>-->
 
     <link rel="stylesheet" href="css/normalize.css" type="text/css" />
-    <!--<link rel="stylesheet" href="css/fonts.css" type="text/css" />-->
+    <link rel="stylesheet" href="css/fonts.css" type="text/css" />
     <link rel="stylesheet" href="css/main.css" type="text/css" media="screen, projection"/>
 
     <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />

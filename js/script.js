@@ -73,7 +73,21 @@ var initFixedMenu=function(){
 };
 
 $(document).ready(function(){
+
     var body = $('html, body');
+    $("#message-form").submit(function(e){
+        e.preventDefault();
+        var form_data = $(this).serialize();
+        console.log(form_data);
+        $.ajax({
+            type: "POST",
+            url: "../php/send.php",
+            data: form_data,
+            success: function() {
+                alert('Ваше сообщение отправлено!');
+            }
+        });
+    });
     $('.partners-blocks li').each(function(){
         var li = $(this);
         var article = li.find('.article');
