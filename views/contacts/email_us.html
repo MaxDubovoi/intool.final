@@ -1,23 +1,9 @@
-<!--<script type = "text/javascript">
-    $(document).ready(function(){
-        $("#message-form").submit(function(){
-            var form_data = $(this).serialize();
-            $.ajax({
-                type: "POST",
-                url: "php/send.php",
-                data: form_data,
-                success: function() {
-                    alert('Ваше сообщение отправлено!');
-                }
-            });
-        });
-    });
-</script>-->
+
 <form id="message-form">
     <p>Ваше имя: </p><input type="text" name="name" required="required"/>
     <p>Название компании: </p><input type="text" name="company-name"/>
     <p>Ваш телефон:</p><input type="text" name="phone"/>
     <p>Ваш e-mail:</p><input type="text" name="email" required="required"/>
-    <p>Сообщение:</p><input type="text" name="message" required="required"/>
+    <p>Сообщение:</p><textarea  name="message" required="required"></textarea>
     <input type="submit" value="Отправить"/>
 </form>

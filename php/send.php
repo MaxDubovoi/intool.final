@@ -1,19 +1,25 @@
 <?php
-    ini_set("SMTP", "localhost");
-    ini_set("smtp_port", "15025");
-    $to = 'maximdubovoi@gmail.com'; //Почта получателя, через запятую можно указать сколько угодно адресов
-    $subject = 'From intool.com.ua'; //Загаловок сообщения
-    $message = '
-                <html>
-                    <head>
-                        <title>'.$subject.'</title>
-                    </head>
-                    <body>
+require_once '../swiftmailer-5.x/lib/swift_required.php';
+    // Create the Transport the call setUsername() and setPassword()
+    $transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465,'ssl')
+        ->setUsername('resume.intool@gmail.com')
+        ->setPassword('workintool')
+    ;
+
+    // Create the Mailer using your created Transport
+    $mailer = Swift_Mailer::newInstance($transport);
+$subject = 'From intool.com.ua'; //Загаловок сообщения
+$messageBody = '
+
                         <p>Имя: '.$_POST['name'].'</p>
                         <p>Телефон: '.$_POST['phone'].'</p>
-                    </body>
-                </html>'; //Текст нащего сообщения можно использовать HTML теги
-    $headers  = "Content-type: text/html; charset=utf-8 \r\n"; //Кодировка письма
-    $headers .= "From: Отправитель <maxim-dubovoi@i.ua>\r\n"; //Наименование и почта отправителя
-    mail($to, $subject, $message, $headers); //Отправка письма с помощью функции mail
-?>
+                    '; //Текст нащего сообщения можно использовать HTML теги
+$message = Swift_Message::newInstance('Wonderful Subject')
+    ->setFrom(array('maxim-dubovoi@i.ua' => 'Max'))
+    ->setTo(array('maximdubovoi@gmail.com' => 'Test'))
+    ->setBody($messageBody,'text/html','utf-8');
+
+$numSent = $mailer->send($message);
+//Полностью расчехлил! Работает!
+
+printf("Sent %d messages\n", $numSent);

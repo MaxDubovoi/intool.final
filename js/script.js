@@ -83,7 +83,8 @@ $(document).ready(function(){
             type: "POST",
             url: "../php/send.php",
             data: form_data,
-            success: function() {
+            success: function(r) {
+                console.log('request',r);
                 alert('Ваше сообщение отправлено!');
             }
         });
