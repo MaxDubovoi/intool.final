@@ -84,8 +84,9 @@ $(document).ready(function(){
             url: "../php/send.php",
             data: form_data,
             success: function(r) {
-                console.log('request',r);
-                alert('Ваше сообщение отправлено!');
+
+                    alert(r);
+
             }
         });
     });
@@ -151,6 +152,9 @@ $(document).ready(function(){
         function scrollToArticle () {
             body.animate({scrollTop: block.offset().top}, 100);
         }
+    }
+    function validationForm(){
+
     }
 
 

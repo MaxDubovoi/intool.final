@@ -5,21 +5,45 @@ require_once '../swiftmailer-5.x/lib/swift_required.php';
         ->setUsername('resume.intool@gmail.com')
         ->setPassword('workintool')
     ;
-
+if(isset($_POST['name'])&&($_POST['name']!="")&&isset($_POST['email'])&&isMail($_POST['email'])) {
     // Create the Mailer using your created Transport
     $mailer = Swift_Mailer::newInstance($transport);
-$subject = 'From intool.com.ua'; //Загаловок сообщения
-$messageBody = '
+    $subject = 'From intool.com.ua'; //Загаловок сообщения
+    $messageBody = '
+                        <p>Название компании:'.$_POST['company-name'].'</p>
+                        <p>Имя: ' . $_POST['name'] . '</p>
+                        <p>Телефон: ' . $_POST['phone'] . '</p>
+                        <p>email: ' . $_POST['email'] . '</p>
+                        <h4>Сообщение</h4>
+                        hr
+                        <p></p>
 
-                        <p>Имя: '.$_POST['name'].'</p>
-                        <p>Телефон: '.$_POST['phone'].'</p>
                     '; //Текст нащего сообщения можно использовать HTML теги
-$message = Swift_Message::newInstance('Wonderful Subject')
-    ->setFrom(array('maxim-dubovoi@i.ua' => 'Max'))
-    ->setTo(array('maximdubovoi@gmail.com' => 'Test'))
-    ->setBody($messageBody,'text/html','utf-8');
+    $message = Swift_Message::newInstance('Message from intool.com.ua ' . $_POST['name'] . ' ' . $_POST['company-name'])
+        ->setFrom(array($_POST['email'] => $_POST['name']))
+        ->setTo(array('maximdubovoi@gmail.com' => 'Test'))
+        ->setBody($messageBody, 'text/html', 'utf-8');
 
-$numSent = $mailer->send($message);
+    $numSent = $mailer->send($message);
 //Полностью расчехлил! Работает!
 
-printf("Sent %d messages\n", $numSent);
+    //printf("Sent %d messages\n", $numSent);
+    echo "Сообщение отправлено";
+}
+else
+{
+    echo "Сообщение не отправлено";
+}
+function isMail($mail)
+{
+    if(filter_var($mail, FILTER_VALIDATE_EMAIL))
+    {
+       return true;
+    }
+    else
+    {
+        echo "Указан неверный e-mail\n";
+        return false;
+    }
+
+};
