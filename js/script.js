@@ -74,22 +74,93 @@ var initFixedMenu=function(){
 
 $(document).ready(function(){
 
-    var body = $('html, body');
     $("#message-form").submit(function(e){
         e.preventDefault();
-        var form_data = $(this).serialize();
-        console.log(form_data);
+        var formData = $(this).serialize();
+        var arrayFormData = $(this).serializeArray();
+
+        validateForm.initOnFocusRemoveErrors(arrayFormData);
+        var valid = !validateForm.validate(arrayFormData);
+
+        if (valid) {
+            sendForm(formData, 'POST', '../php/send.php');
+        }
+    });
+
+    function sendForm (data, method, url) {
         $.ajax({
-            type: "POST",
-            url: "../php/send.php",
-            data: form_data,
+            type: method,
+            url: url,
+            data: data,
             success: function(r) {
-
-                    alert(r);
-
+                alert(r)
             }
         });
-    });
+    }
+
+    var validateForm = (function () {
+
+        var self = {
+            validate: function (formData) {
+                var errors = [];
+                for (var i = 0; i < formData.length; i++) {
+                    var elem = $('[name=' + formData[i].name + ']');
+                    var fieldType = elem.data('type');
+
+                    elem.parent().removeClass('is-error');
+
+                    if (self.isRequired(elem) && !self.isValid(fieldType, formData[i].value)) {
+                        errors.push(fieldType);
+                        elem.parent().addClass('is-error');
+                    }
+                }
+                return errors.length;
+            },
+
+            initOnFocusRemoveErrors: function (formData) {
+                for (var i = 0; i < formData.length; i++) {
+                    var elem = $('[name=' + formData[i].name + ']');
+                    elem.focus(function(){
+                        $(this).parent().removeClass('is-error');
+                    })
+                }
+            },
+
+            isRequired: function (element) {
+                return element.attr('data-required');
+            },
+
+            isValid: function (fieldType, value) {
+                switch (fieldType) {
+                    case 'email'   : return self.isValidEmail(value);   break;
+                    case 'message' : return self.isValidMessage(value); break;
+                    case 'name'    : return self.isValidName(value);    break;
+
+                    default: console.warn('Unhandled field type');     break;
+                }
+            },
+
+            isValidEmail: function (email) {
+                var pattern = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+                return pattern.test(email);
+            },
+
+            isValidMessage: function (message) {
+                return self.isIsset(message);
+            },
+
+            isValidName: function (name) {
+                return self.isIsset(name);
+            },
+
+            isIsset: function (value) {
+                return undefined != value && value.length > 0;
+            }
+        };
+
+        return self;
+    })();
+
     $('.partners-blocks li').each(function(){
         var li = $(this);
         var article = li.find('.article');
@@ -153,9 +224,5 @@ $(document).ready(function(){
             body.animate({scrollTop: block.offset().top}, 100);
         }
     }
-    function validationForm(){
-
-    }
-
 
 });

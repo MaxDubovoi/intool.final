@@ -78,8 +78,8 @@ Global elements
 .visible {
   visibility: visible !important;
   opacity: 1 !important;
-  -ms-filter: none;
-  filter: none;
+  -ms-filter: none !important;
+  filter: none !important;
 }
 .clear {
   clear: both;
@@ -1113,4 +1113,35 @@ FOOTER
   font-family: "PT Sans", "Arial", "Times New Roman", sans-serif;
   font-weight: 400;
   margin: 17px 0 0 64px;
+}
+.message-form .input-holder.is-error .error-text {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+  visibility: visible;
+}
+.message-form .input-holder.is-error textarea,
+.message-form .input-holder.is-error input {
+  border-color: #f00;
+}
+.message-form .input-holder .error-text {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  visibility: hidden;
+  font-size: 12px;
+  color: #f00;
+  transition: opacity 0.3s ease;
+}
+.message-form .input-holder .error-text,
+.message-form .input-holder textarea,
+.message-form .input-holder input {
+  display: inline-block;
+  vertical-align: middle;
+}
+.message-form .input-holder textarea,
+.message-form .input-holder input {
+  width: 200px;
+  resize: none;
+  border: 1px solid transparent;
 }

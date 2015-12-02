@@ -1,10 +1,42 @@
 
-<form id="message-form">
-    <p>Ваше имя: </p><input type="text" name="name" required="required"/>
-    <p>Название компании: </p><input type="text" name="company-name"/>
-    <p>Ваш телефон:</p><input type="text" name="phone"/>
-    <p>Ваш e-mail:</p><input type="text" name="email" required="required"/>
-    <p>Сообщение:</p><textarea  name="message" required="required"></textarea>
+<form class="message-form" id="message-form">
+    <div class="row">
+        <p>Ваше имя: </p>
+        <div class="input-holder"><!--.is-error-->
+            <input type="text" name="name" data-required="true" data-type="name"/>
+            <div class="error-text">Введите свое имя</div>
+        </div>
+    </div>
+    <div class="row">
+        <p>Название компании: </p>
+        <div class="input-holder"><!--.is-error-->
+            <input type="text" name="company-name"/>
+            <div class="error-text">Введите название компании</div>
+        </div>
+    </div>
+    <div class="row">
+        <p>Ваш телефон: </p>
+        <div class="input-holder"><!--.is-error-->
+            <input type="text" name="phone"/>
+            <div class="error-text">Введите телефон</div>
+        </div>
+    </div>
+
+    <div class="row">
+        <p>Ваш e-mail: </p>
+        <div class="input-holder"><!--.is-error-->
+            <input type="text" name="email" data-required="true" data-type="email"/>
+            <div class="error-text">Введите e-mail</div>
+        </div>
+    </div>
+
+    <div class="row">
+        <p>Сообщение: </p>
+        <div class="input-holder"><!--.is-error-->
+            <textarea name="message" data-required="true" data-type="message"></textarea>
+            <div class="error-text">Введите сообщение</div>
+        </div>
+    </div>
     <input type="submit" value="Отправить"/>
     <hr>
 </form>
