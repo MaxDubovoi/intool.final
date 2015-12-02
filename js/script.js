@@ -74,15 +74,17 @@ var initFixedMenu=function(){
 
 $(document).ready(function(){
 
+    var arrayFormData = $(this).serializeArray();
     $("#message-form").submit(function(e){
         e.preventDefault();
         var formData = $(this).serialize();
-        var arrayFormData = $(this).serializeArray();
+        arrayFormData = $(this).serializeArray();
 
         validateForm.initOnFocusRemoveErrors(arrayFormData);
         var valid = !validateForm.validate(arrayFormData);
 
         if (valid) {
+            $('#submit-btn').attr('disabled', 'disabled')
             sendForm(formData, 'POST', '../php/send.php');
         }
     });
@@ -93,7 +95,9 @@ $(document).ready(function(){
             url: url,
             data: data,
             success: function(r) {
-                alert(r)
+                alert(r);
+                validateForm.clearForm(arrayFormData);
+                $('#submit-btn').removeAttr('disabled');
             }
         });
     }
@@ -120,9 +124,18 @@ $(document).ready(function(){
             initOnFocusRemoveErrors: function (formData) {
                 for (var i = 0; i < formData.length; i++) {
                     var elem = $('[name=' + formData[i].name + ']');
-                    elem.focus(function(){
+                    elem.unbind('focus');
+                    elem.bind('focus', function(){
                         $(this).parent().removeClass('is-error');
+                        $(this).val('');
                     })
+                }
+            },
+
+            clearForm: function (formData) {
+                for (var i = 0; i < formData.length; i++) {
+                    var elem = $('[name=' + formData[i].name + ']');
+                    elem.val('')
                 }
             },
 
