@@ -20,9 +20,17 @@ require_once '../views/emailTemplate.php';
 
 if(isset($_POST['name']) && ($_POST['name']!="") && isMail($_POST['email'])) {
     $to  = "maximdubovoi@gmail.com" ;
-    $headers  = "Content-type: text/html; charset=windows-1251 \r\n";
+    $headers  = "Content-type: text/html; charset=utf-8 \r\n";
     $headers .= "From:".$_POST['name']." <".$_POST['email'].">\r\n";
     $subject = 'Message from intool.com.ua ' . $_POST['name'] . ' ' . $_POST['company-name']; //Загаловок сообщения
+    $message = '<html>
+                    <head>
+                        <title>'.$subject.'</title>
+                    </head>
+                    <body>
+                        '.$emailTemplate.'
+                    </body>
+                </html>';
     //SwiftSmtp($emailTemplate,$subject,$to);//Отправление SMTP не работает на Hostinger, но работает на локальном
     mail($to, $subject, $emailTemplate, $headers);//Send from Hostinger
 //Полностью расчехлил! Работает!
