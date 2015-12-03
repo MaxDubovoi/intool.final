@@ -78,8 +78,8 @@ Global elements
 .visible {
   visibility: visible !important;
   opacity: 1 !important;
-  -ms-filter: none !important;
-  filter: none !important;
+  -ms-filter: none;
+  filter: none;
 }
 .clear {
   clear: both;
