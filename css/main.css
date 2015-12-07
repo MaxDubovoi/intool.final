@@ -40,9 +40,6 @@ li {
 a {
   text-decoration: none;
 }
-a:visited {
-  color: #000;
-}
 a:focus {
   outline: none;
 }
@@ -947,10 +944,16 @@ PRODUCTS PAGE
   line-height: 19px;
   text-transform: uppercase;
   display: block;
-  border-top: 2px solid #808080;
-  border-bottom: 2px solid #808080;
+  border-top: 2px solid #e4000b;
+  border-bottom: 2px solid #e4000b;
   margin: 6px auto 6px auto;
-  color: #4d4d4d;
+  color: #e4000b;
+}
+.item-label a {
+  color: #e4000b;
+}
+.item-label a:visited {
+  color: #e4000b;
 }
 /* =============================================================================
 LEFT SIDE
