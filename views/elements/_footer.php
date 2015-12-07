@@ -10,8 +10,9 @@
 <h3>Мы рады сотрудничать с Вами!</h3>
 
 <div class="lang-panel">
-    <i class="message-icon"></i>
+    <a href="/email_us" class="message-icon"></a>
     <ul class="site-lang-list">
         <li class="lang-item"><span>Rus</span></li>
         <li class="lang-item"><a href="">Eng</a></li>
     </ul>
+    </div>

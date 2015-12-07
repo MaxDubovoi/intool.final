@@ -43,6 +43,7 @@ switch ($_SESSION['page']){
         $meta_kw = 'Производство';
         $_SESSION['section']='production';
         break;
+    case 'email_us':
     case 'contacts':
         $title = 'Контакты';
         $meta_d = 'Контакты';

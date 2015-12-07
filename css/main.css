@@ -1114,6 +1114,9 @@ FOOTER
   font-weight: 400;
   margin: 17px 0 0 64px;
 }
+/* =============================================================================
+MAIL FORM
+========================================================================== */
 .message-form .input-holder.is-error .error-text {
   opacity: 1;
   -ms-filter: none;
@@ -1155,5 +1158,21 @@ FOOTER
   height: 100px;
 }
 /* =============================================================================
-MAIL FORM
+CONTACTS
 ========================================================================== */
+.address-contacts h3 {
+  font-size: 16px;
+}
+.address-contacts h4 {
+  font-size: 14px;
+  margin: 0 0 0 0;
+}
+.address-contacts p {
+  font-size: 12px;
+}
+.address-contacts span {
+  margin: 0 0 0 27px;
+}
+.location-map h3 {
+  font-size: 16px;
+}
