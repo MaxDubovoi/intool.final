@@ -19,7 +19,7 @@ require_once '../views/emailTemplate.php';
     }
 
 if(isset($_POST['name']) && ($_POST['name']!="") && isMail($_POST['email'])) {
-    $to  = "maximdubovoi@gmail.com" ;
+    $to  = "s@intool.com.ua" ;
     $headers  = "Content-type: text/html; charset=utf-8 \r\n";
     $headers .= "From:".$_POST['name']." <".$_POST['email'].">\r\n";
     $subject = 'Message from intool.com.ua ' . $_POST['name'] . ' ' . $_POST['company-name']; //Загаловок сообщения

@@ -603,7 +603,7 @@ ICONS
 }
 .content-icon.pen {
   float: left;
-  margin: 5px 7px 0 0;
+  margin: -14px 7px 0 0;
 }
 .content-icon.pen:before,
 .content-icon.pen:after {

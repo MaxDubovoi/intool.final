@@ -91,6 +91,7 @@ switch ($_SESSION['page']){
 </head>
 
 <body>
+<?php include_once("php/analyticsGoogle.php") ?>
 <!-- BEGIN wrapper-->
 <div class="wrapper">
     <div class="min-width">
