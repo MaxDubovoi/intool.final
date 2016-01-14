@@ -62,9 +62,9 @@ switch ($_SESSION['page']){
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
     <title>Inter-instrument</title>
-    <meta name="title" content=""/>
-    <meta name="keywords" content=""/>
-    <meta name="description" content=""/>
+    <meta name="title" content="<? echo  $title ?>"/>
+    <meta name="keywords" content="<? echo  $meta_kw ?>"/>
+    <meta name="description" content="<? echo  $meta_d ?>"/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta property="og:title" content="" />
     <meta property="og:description" content=""/>

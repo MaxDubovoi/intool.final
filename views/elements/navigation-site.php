@@ -10,13 +10,13 @@
     <li><a href="/">Продукция</a></li>
 <?php endif; ?>
 
-<?php if ($_SESSION['page'] == "services"): ?>
+<?php if ($_SESSION['page'] == "engineering"): ?>
     <li><span class="active" >Услуги</span></li>
 <?php else: ?>
     <li><a href="/engineering">Услуги</a></li>
 <?php endif; ?>
 
-<?php if ($_SESSION['page'] == "production"): ?>
+<?php if ($_SESSION['page'] == "technology"): ?>
     <li><span class="active" >Производство</span></li>
 <?php else: ?>
     <li><a href="/technology">Производство</a></li>
