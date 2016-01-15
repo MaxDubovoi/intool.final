@@ -1,5 +1,5 @@
 <a href=""><img class="main-logo" src="images/logo.png" alt=""></a>
-<h3>ВАШ  НАДЕЖНЫЙ  ПАРТНЕР  В  ОБЛАСТИ  МЕТАЛЛООБРАБОТКИ</h3>
+<h1>ВАШ  НАДЕЖНЫЙ  ПАРТНЕР  В  ОБЛАСТИ  МЕТАЛЛООБРАБОТКИ</h1>
 <div class="lang-panel">
     <a href="/email_us" class="message-icon"></a>
     <ul class="site-lang-list">

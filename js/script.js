@@ -1,4 +1,5 @@
 var duration = 300;
+var body = $("html,body");
 
 
 var BrowserDetect = {
@@ -231,6 +232,7 @@ $(document).ready(function(){
             block.addClass('hide');
             scrollToArticle();
             link.text('Подробнее...');
+
         }
 
         function scrollToArticle () {

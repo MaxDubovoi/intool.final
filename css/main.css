@@ -645,7 +645,7 @@ PAGE
 .header:after {
   clear: both;
 }
-.header h3 {
+.header h1 {
   display: inline-block;
   float: left;
   color: #000;

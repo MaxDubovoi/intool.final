@@ -9,48 +9,112 @@ else{
 }
 switch ($_SESSION['page']){
     case 'aboutCompany':
-    case 'history':
-    case 'aim':
-    case 'vacancy':
-    case 'partner':
-        $title = 'О компании';
+        $title = ' Интер-инструмент - О компании - ПРОМЫШЛЕННОЕ ПРОИЗВОДСТВО - ОТ ИДЕИ К РЕАЛЬНОСТИ';
         $meta_d = 'О компании';
         $meta_kw = 'О компании';
         $_SESSION['section']='aboutCompany';
         break;
+    case 'history':
+        $title = ' Интер-инструмент - О компании';
+        $meta_d = 'О компании';
+        $meta_kw = 'О компании';
+        $_SESSION['section']='aboutCompany';
+        break;
+    case 'aim':
+        $title = ' Интер-инструмент - О компании';
+        $meta_d = 'О компании';
+        $meta_kw = 'О компании';
+        $_SESSION['section']='aboutCompany';
+        break;
+    case 'vacancy':
+        $title = ' Интер-инструмент - О компании';
+        $meta_d = 'О компании';
+        $meta_kw = 'О компании';
+        $_SESSION['section']='aboutCompany';
+        break;
+    case 'partner':
+        $title = ' Интер-инструмент - О компании';
+        $meta_d = 'О компании';
+        $meta_kw = 'О компании';
+        $_SESSION['section']='aboutCompany';
+        break;
+    //***********END ABOUT COMPANY SECTION***
     case 'products':
-    case 'equipment':
-    case 'snap-in':
-    case 'tool':
-        $title = 'Продукция';
+        $title = 'Интер-инструмент - ваш надежный партнер в области металообработки';
         $meta_d = 'Продукция';
-        $meta_kw = 'Продукция';
+        $meta_kw = 'Продукция, ';
         $_SESSION['section']='products';
         break;
+    case 'equipment':
+        $title = 'Интер-инструмент - ваш надежный партнер в области металообработки';
+        $meta_d = 'Продукция';
+        $meta_kw = 'Продукция, ';
+        $_SESSION['section']='products';
+        break;
+    case 'snap-in':
+        $title = 'Интер-инструмент - ваш надежный партнер в области металообработки';
+        $meta_d = 'Продукция';
+        $meta_kw = 'Продукция, ';
+        $_SESSION['section']='products';
+        break;
+    case 'tool':
+        $title = 'Интер-инструмент - ваш надежный партнер в области металообработки';
+        $meta_d = 'Продукция';
+        $meta_kw = 'Продукция, ';
+        $_SESSION['section']='products';
+        break;
+    //***********END PRODUCTS SECTION***
     case 'engineering':
-    case 'maintenance':
-    case 'manufacture':
-        $title = 'Услуги';
+        $title = 'Интер-инструмент - Услуги';
         $meta_d = 'Услуги';
         $meta_kw = 'Услуги';
         $_SESSION['section']='services';
         break;
+    case 'maintenance':
+        $title = 'Интер-инструмент - Услуги';
+        $meta_d = 'Услуги';
+        $meta_kw = 'Услуги';
+        $_SESSION['section']='services';
+        break;
+    case 'manufacture':
+        $title = 'Интер-инструмент - Услуги';
+        $meta_d = 'Услуги';
+        $meta_kw = 'Услуги';
+        $_SESSION['section']='services';
+        break;
+    //***********END SERVICES SECTION***
     case 'production':
-    case 'service':
-    case 'technology':
-        $title = 'Производство';
+        $title = 'Интер-инструмент - Производство';
         $meta_d = 'Производство';
         $meta_kw = 'Производство';
         $_SESSION['section']='production';
         break;
+    case 'service':
+        $title = 'Интер-инструмент - Производство';
+        $meta_d = 'Производство';
+        $meta_kw = 'Производство';
+        $_SESSION['section']='production';
+        break;
+    case 'technology':
+        $title = 'Интер-инструмент - Производство';
+        $meta_d = 'Производство';
+        $meta_kw = 'Производство';
+        $_SESSION['section']='production';
+        break;
+    //***********END PRODUCTS SECTION***
     case 'email_us':
-    case 'contacts':
-        $title = 'Контакты';
+        $title = 'Интер-инструмент - Контакты';
         $meta_d = 'Контакты';
         $meta_kw = 'Контакты';
         $_SESSION['section']='contacts';
         break;
-
+    case 'contacts':
+        $title = 'Интер-инструмент - Контакты';
+        $meta_d = 'Контакты';
+        $meta_kw = 'Контакты';
+        $_SESSION['section']='contacts';
+        break;
+    //***********END CONTACTS SECTION***
 }
 ?>
 <!DOCTYPE html>
@@ -61,7 +125,7 @@ switch ($_SESSION['page']){
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
-    <title>Inter-instrument</title>
+    <title><? echo  $title ?></title>
     <meta name="title" content="<? echo  $title ?>"/>
     <meta name="keywords" content="<? echo  $meta_kw ?>"/>
     <meta name="description" content="<? echo  $meta_d ?>"/>
@@ -91,7 +155,8 @@ switch ($_SESSION['page']){
 </head>
 
 <body>
-<?php include_once("php/analyticsGoogle.php") ?>
+<?php include_once("php/analytics.php") ?>
+
 <!-- BEGIN wrapper-->
 <div class="wrapper">
     <div class="min-width">
