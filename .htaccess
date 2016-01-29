@@ -5,6 +5,6 @@ AddDefaultCharset utf-8
   RewriteRule ^/$ / [L]
 
   RewriteCond %{REQUEST_URI} !/$
-  RewriteCond %{REQUEST_URI} !\.(jpg|png|gif|css|js|php|xml)$
+  RewriteCond %{REQUEST_URI} !\.(jpg|png|gif|css|js|php|xml|txt)$
   RewriteRule ^(.*)$ index.php?page=$1
 </IfModule>
