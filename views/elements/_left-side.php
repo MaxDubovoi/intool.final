@@ -39,8 +39,4 @@ switch($_SESSION['section'])
     }
     ?>
 </ul>
-<!-- Yandex.Metrika informer -->
-<a href="https://metrika.yandex.ru/stat/?id=34716185&amp;from=informer"
-   target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/34716185/3_1_FFFFFFFF_EFEFEFFF_0_pageviews"
-                                       style="width:88px; height:31px; border:0; margin-top: 20px;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" onclick="try{Ya.Metrika.informer({i:this,id:34716185,lang:'ru'});return false}catch(e){}" /></a>
-<!--/Yandex.Metrika informer-->
+
