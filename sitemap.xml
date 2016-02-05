@@ -1,119 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
+<urlset>
 <url>
   <loc>http://intool.com.ua/</loc>
-  <changefreq>weekly</changefreq>
+  <changefreq>daily</changefreq>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>http://intool.com.ua/email_us</loc>
-  <changefreq>weekly</changefreq>
+  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://intool.com.ua/aboutCompany</loc>
-  <changefreq>weekly</changefreq>
+  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://intool.com.ua/engineering</loc>
-  <changefreq>weekly</changefreq>
+  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://intool.com.ua/technology</loc>
-  <changefreq>weekly</changefreq>
+  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://intool.com.ua/contacts</loc>
-  <changefreq>weekly</changefreq>
+  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://intool.com.ua/tool</loc>
-  <changefreq>weekly</changefreq>
+  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://intool.com.ua/snap-in</loc>
-  <changefreq>weekly</changefreq>
+  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://intool.com.ua/equipment</loc>
-  <changefreq>weekly</changefreq>
+  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://intool.com.ua/index.php?page=tool</loc>
-  <changefreq>weekly</changefreq>
+  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://intool.com.ua/index.php?page=snap-in</loc>
-  <changefreq>weekly</changefreq>
+  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://intool.com.ua/index.php?page=production</loc>
-  <changefreq>weekly</changefreq>
+  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://intool.com.ua/index.php?page=equipment</loc>
-  <changefreq>weekly</changefreq>
+  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://intool.com.ua/index.php?page=contacts</loc>
-  <changefreq>weekly</changefreq>
+  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://intool.com.ua/history</loc>
-  <changefreq>weekly</changefreq>
+  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://intool.com.ua/aim</loc>
-  <changefreq>weekly</changefreq>
+  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://intool.com.ua/vacancy</loc>
-  <changefreq>weekly</changefreq>
+  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://intool.com.ua/partner</loc>
-  <changefreq>weekly</changefreq>
+  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://intool.com.ua/manufacture</loc>
-  <changefreq>weekly</changefreq>
+  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://intool.com.ua/maintenance</loc>
-  <changefreq>weekly</changefreq>
+  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://intool.com.ua/production</loc>
-  <changefreq>weekly</changefreq>
+  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://intool.com.ua/service</loc>
-  <changefreq>weekly</changefreq>
+  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 </urlset>

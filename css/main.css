@@ -1182,3 +1182,66 @@ CONTACTS
 .location-map h3 {
   font-size: 16px;
 }
+/* =============================================================================
+VACANCY
+========================================================================== */
+ul,
+li {
+  list-style: non;
+  margin: 0;
+  padding: 0;
+}
+.vacancies-list {
+  padding: 20px;
+  margin: -20px -10px 0 0;
+  font-size: 0;
+  width: 500px;
+}
+.vacancies-list-item {
+  min-height: 140px;
+  border: 1px solid #e4000b;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px 10px 10px 0;
+  font-size: 20px;
+}
+.vacancies-list-item h3 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.requirements-list {
+  margin: -10px 0 0 0;
+}
+.requirements-list-item {
+  margin: 10px 0 0 0;
+  font-size: 0;
+}
+.requirements-list-item a {
+  text-decoration: underline;
+}
+.requirements-list-item .title,
+.requirements-list-item .description {
+  font-size: 12px;
+}
+.requirements-list-item .title {
+  float: left;
+  margin: 0 20px 0 0;
+  font-weight: 600;
+}
+.requirements-list-item .description {
+  overflow: hidden;
+}
+.hr-contacts {
+  margin: 0 auto;
+  width: 500px;
+  padding: 20px;
+  font-size: 15px;
+}
+.hr-contacts h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
