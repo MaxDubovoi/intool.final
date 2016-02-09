@@ -136,6 +136,7 @@ switch ($_SESSION['page']){
     <meta property="og:description" content=""/>
     <meta property="og:image" content="" />
     <meta property="og:url" content="" />
+    <meta name='yandex-verification' content='76dd17a640611279' />
 
 
     <!--<base href="" > -->
