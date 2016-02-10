@@ -918,6 +918,12 @@ PRODUCTS PAGE
 .products-text {
   text-indent: 20px;
 }
+.products-text a {
+  color: #e4000b;
+}
+.products-text:visited {
+  color: #dc9f5a;
+}
 .products-image {
   position: absolute;
   top: 0;
